@@ -1,4 +1,2 @@
-# This repo is my notes on setting things up
+# A repo for notes on things.
 ---
-
-
