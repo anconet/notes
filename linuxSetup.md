@@ -8,7 +8,7 @@ sudo apt upgrade
 ## SSH 
 ### Server
 ```console 
-sudo apt instal openssh-server
+sudo apt install openssh-server
 ```
 Usually the server is added to Startup. Server runs under the process `sshd`
 ### Client
