@@ -6,21 +6,29 @@
 sudo apt update
 sudo apt upgrade
 ```
+---
+## Host Name
+Edit the below files by replace `old-hostname` with `new-hostname`
+```bash
+sudo vim /etc/hostname
+sudo vim /etc/hosts
+reboot
+```
+---
 ## SSH 
-### Server
+### Server Side
+Install and create the server. The process will run under `sshd`. Will automatically go into the startup file.
 ```console 
 sudo apt install openssh-server
 ```
-Usually the server is added to Startup. Server runs under the process `sshd`
-### Client
-#### Key Pair Generation
+### Client Side
+Key Pair Generation
 ```console
 ssh-keygen -t rsa -b 4096
 ssh-copy-id -i id_rsa <userId>@<remote>
 ```
 
-### Agent
-[Virtual Box Setup](virtualBox.md)
+
 
 
 
