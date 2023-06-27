@@ -34,6 +34,8 @@ Use the Framework to create the initial project
 ```bash
 npx create-next-app
 cd my-app
+# Actually may not need Axios with Next.js
+npm install axios
 npm run dev
 ```
 
