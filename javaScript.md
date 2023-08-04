@@ -11,7 +11,8 @@
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 # Install the tools
 sudo apt install -y nodejs 
-sudo apt install -y npm
+# npm might install auto matically with nodejs
+# sudo apt install -y npm
 ```
 ### NPM versus NPX
 `npm` is the node package manager.\
@@ -29,7 +30,7 @@ npm start
 |Root JS File| `my-app/src/index.js`|`my-app/src/App.js`|
 
 ---
-### Create a bare Next JS Framework App
+### Create a bare Next JS Framework App and API
 Use the Framework to create the initial project
 ```bash
 npx create-next-app
