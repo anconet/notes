@@ -2,6 +2,14 @@
 ---
 1. Create an XP Virtual Machine.
     - Follow the [Instructuctions Here](virtualBox.md#virtual-box-windowsxp-mode).
+
+    - Setup the Dumb Link to the Host Downloads Directory
+        - Devices/Shared Folder
+            - Read Only
+            - Auto Mount
+            - XP connects me to vboxsvr://Z:/Downloads
+            - You'll see this in "My Computer" on Silly XP
+
 2. Download the gectko tools to the VM
     - Link to the GTecko distro: https://www.northamericanmotoring.com/forums/electrical/205937-ncsexpert-for-beginners.html
     - Install 7zip.

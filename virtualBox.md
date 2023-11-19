@@ -31,6 +31,20 @@ This website has great instructions on downloading and installing Windows XP Mod
 - https://www.makeuseof.com/tag/download-windows-xp-for-free-and-legally-straight-from-microsoft-si/
 - Windows XP Mode is free
 
+Speed Notes:
+- Fully delete old installs. Else you will have conflicts with with the .vhd file.
+- Extract a fresh xpm directory to WindowsXpModeAgain directory in Downloads.
+- 2048M of memory
+- 1 cpu
+- 128M video
+- VMSVGA display
+- Boot
+- Reboot at black screen
+- Install guest aditions
+    - That will get the mouse working.
+
 Black Screen Issue: 
 - There is a point where you might get a black screen. Go into the VM and change the display to VMSVGA.
 - https://www.youtube.com/watch?v=seGdSNimbOQ
+
+Back to the [Mini Cooper Setup Page](/miniToolsSetup.md)
