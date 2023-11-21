@@ -5,7 +5,8 @@
 - Node JS for the server
 - React Framework
 ---
-## Install Node
+## Node
+### Install
 ```bash
 # Pull the latest LTS version
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
@@ -19,7 +20,9 @@ sudo apt install -y nodejs
 `npx` allows you execute package manager commands without nessarily having installed the package.
 
 ---
-### Create a bare React App
+## React
+
+### Automatically create a bare React App
 ```bash
 npx create-react-app my-app
 cd my-app
@@ -29,9 +32,22 @@ npm start
 |-------     |------|------ |
 |Root JS File| `my-app/src/index.js`|`my-app/src/App.js`|
 
+### Manually create a bare React Back End Server
+[Anthony's Plain React Backend](https://github.com/anconet/nodeJsManualBackEnd)
+- Uses Express to listen and respond.
 ---
-### Create a bare Next JS Framework App and API
-Use the Framework to create the initial project
+
+## NextJs
+The new React recommended framework.
+- Frontend
+- Backend with built in routes.
+- Server Side Rendering
+
+### Automatically Create a bare Next JS Framework App and API
+- Use the Framework to create the initial project.
+- [nextjs.org Automatic Instructions](https://nextjs.org/docs/getting-started/installation#automatic-installation)
+- [Anthony's Plain NextJs Automatic Repo](https://github.com/anconet/nextJsExample)
+
 ```bash
 npx create-next-app
 cd my-app
@@ -39,9 +55,13 @@ cd my-app
 npm install axios
 npm run dev
 ```
+### Manually Create a bare Next JS Framework
+- [nextjs.org Manual Instructions](https://nextjs.org/docs/getting-started/installation#manual-installation)
+- [Anthony's Plain NextJs Manual Repo](https://github.com/anconet/nextJsManual)
+
 ---
 ## Misc Notes
----
+
 ### import() versus require()
 - https://dev.to/costamatheus97/es-modules-and-commonjs-an-overview-1i4b
 - ECMAScript 6 (ES6) 2015 brought in a new Module system called ES Modules.
