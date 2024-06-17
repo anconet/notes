@@ -28,3 +28,15 @@ Download thngs from websits
 # -O use file name from the website
 curl -LO [URL] 
 ```
+
+## Stats
+```bash
+# size of disk
+df -h or -m
+# size of directories
+du -h or -m
+# Running stats
+top
+top -o %MEM #sort by memory usage
+# Simper view of memory
+free -tm # total and in mb

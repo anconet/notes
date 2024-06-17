@@ -15,6 +15,14 @@ sudo apt install -y nodejs
 # npm might install auto matically with nodejs
 # sudo apt install -y npm
 ```
+Or
+```bash
+sudo apt install -y nodejs
+npm i -g n
+n install lts
+# To re install dependencies in a project
+npm i
+```
 ### NPM versus NPX
 `npm` is the node package manager.\
 `npx` allows you execute package manager commands without nessarily having installed the package.
@@ -121,3 +129,29 @@ Add the `"type": "module` to package.json
 #### .mjs files
 Just the standard file extention for ES6 Modules.
 
+### Styling
+Literally about twenty ways to skin the cat.
+
+#### Native HTTP:
+```Javascript
+<style>
+```
+#### Native HTTP Inline:
+```Javascript
+ <someComponent style="css...">
+ ```
+ #### Native React:
+ 
+ `myCSS.css`
+ ```CSS
+.myClassName  {
+  border-radius: 50%;
+}
+ ```
+ ```JavaScript
+import "myCSS.css"
+
+<myComponent className="myClassName">
+ 
+ ```
+#### Tailwind
