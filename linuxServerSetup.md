@@ -20,5 +20,17 @@ cat ~/.ssh/id_rsa.pub >> authorized_keys
 see [Docker Instructions](https://docs.docker.com/engine/install/ubuntu/)
 ```
 
+Fixing the stupid undersizing of the drive (Here)[https://askubuntu.com/questions/1106795/ubuntu-server-18-04-lvm-out-of-space-with-improper-default-partitioning]
+
+```bash
+du -h
+sudo lvm
+lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+exit
+
+sudo resize2fs /dev/ubuntu-vg/ubuntu-lv
+du -h
+```
 
 ## Alpine
+
