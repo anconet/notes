@@ -29,7 +29,7 @@ parse_git_branch() {
 }
 export PS1="\u@\h \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
 ```
-Setting Up a silly Credentials Manager
+## Setting Up a silly Credentials Manager
 ```bash
 # Download the .deb
 curl -LO https://github.com/git-ecosystem/git-credential-manager/releases/download/v2.1.2/gcm-linux_amd64.2.1.2.deb
@@ -45,3 +45,6 @@ git-credential-manager configure
 # Tell git to use GCM
 git config --global credential.credentialStore cache
 ```
+
+## Just running SSH
+Here is a greate write up on (Setting Up SSH)[https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278]

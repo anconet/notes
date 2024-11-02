@@ -40,3 +40,10 @@ top
 top -o %MEM #sort by memory usage
 # Simper view of memory
 free -tm # total and in mb
+```
+
+## Check Open ports
+```bash
+less /etc/services
+ss -tunlp
+```
