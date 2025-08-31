@@ -1,4 +1,6 @@
 # Git Setup
+[← Return to Home](readMe.md)
+
 ---
 Useful things I always have to do.
 
@@ -48,3 +50,5 @@ git config --global credential.credentialStore cache
 
 ## Just running SSH
 Here is a greate write up on (Setting Up SSH)[https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278]
+
+[← Return to Home](readMe.md)

@@ -1,6 +1,7 @@
-[Home](readMe.md)
 # Setup points for Linux
+[← Return to Home](readMe.md)
 
+---
 ## Always
 ```console
 sudo apt update
