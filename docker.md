@@ -24,7 +24,9 @@ sudo apt-get update
 # Test the Install
 sudo docker run hello-world
 
-sudo docker run -it ubuntu bash
+
+# Access the prompt in docker
+sudo docker exec -it ubuntu bash
 
 # Messing with Containers and Images
 sudo docker images
@@ -38,6 +40,7 @@ sudo docker logs <id>
 sudo docker stop
 sudo docker start
 sudo docker run -d -p 9000:80 nginx:1.23 #Interna:External
+sudo docker inspect <container_id> | grep "Mounts"
 ```
 ## Docker Command FIle
 ```bash

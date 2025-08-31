@@ -15,8 +15,11 @@
 - [Java Script](/javaScript.md)
 - [Next Js Framework](/nextjs.md)
 ## Misc
-- [Mini Cooper Tools Config](/miniToolsSetup.mdmini)
-
+- [Mini Cooper Tools Config](/miniToolsSetup.md)
+## Docker
+-[Docker Stuff](/docker.md)
+## MongoDb
+-[Accessing Data on Disk](/mongodb.md)
 <details><summary><h2>Summary</h></summary>
 This is a test
 </details>
