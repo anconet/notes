@@ -25,10 +25,11 @@ sudo apt install openssh-server
 ### Client Side
 Key Pair Generation
 ```console
-ssh-keygen -t rsa -b 4096
+ssh-keygen -t rsa -b 4096 -C "Anthony's Dev Laptop"
 ssh-copy-id -i id_rsa <userId>@<remote>
 ```
-
+#### Server Side again
+Once you have the your key pair. Past the public key in .ssh/authorized_keys on the server.
 
 
 

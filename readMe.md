@@ -10,11 +10,13 @@
 ## Tools 
 - [Visual Studio Code Setup](/visualStudioCode.md)
 - [git Setup](/gitSetup.md)
+- [git Cheatsheet](/gitCheatSheet.md)
 - [Docker](/docker.md)
 ## Code
 - [Java Script](/javaScript.md)
 - [Next Js Framework](/nextjs.md)
 - [ViTest](/viTest.md)
+- [react-hook-form](reactHookForm.md)
 ## Misc
 - [Mini Cooper Tools Config](/miniToolsSetup.md)
 ## Docker

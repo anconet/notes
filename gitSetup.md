@@ -48,7 +48,20 @@ git-credential-manager configure
 git config --global credential.credentialStore cache
 ```
 
-## Just running SSH
-Here is a greate write up on (Setting Up SSH)[https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278]
+## More stupid Github notes
+A note to my friend Future Anthony...
 
-[← Return to Home](readMe.md)
+Stupid Github doesn't take passwords anymore on the command line. So you have to use a credentials manager (like above) or you have to use ssh. SSH is probably the best path.
+
+However, I'm running VS code on Windows. VSCode on windows has it's own credentials manager. So when you go to do a first ever operation against github with VSCode, VSCode will pop up a window to ask you to sign into github. From that point on, VScode can do operations with Github.
+
+However, However, running a terminal in VSCode does not leverage the credentials manager. So if you go for a while without using the VSCode, Github may timeout and say "Hey, you gotta log in again. And we're fricking stupid, so you have to use a credentials manager."
+
+So if you perform any operation with VSCode, that registers my laptop against github. And now I can use command lines again.
+
+## Just running SSH against Github
+Here is a greate write up on (Setting Up SSH)[https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278]
+* Generate Key pair
+* Copy Pub Key to github account
+* run `ssh -T git@github.com` to verify connection
+
