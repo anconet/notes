@@ -8,6 +8,16 @@ wsl --list --online // Distro options
 wsl --list // for what is installed
 wsl --install -d [Distro] 
 ```
+## Start Up
+```bash
+wsl
+wsl -d <distro> // Typically Ubuntu
+wsl -u <user>
+```
+## What's running
+```bash
+wsl -l -v
+```
 ## Create Multiple Instances of the same distro.
 https://www.mourtada.se/installing-multiple-instances-of-ubuntu-in-wsl2/
 
