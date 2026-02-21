@@ -26,6 +26,11 @@ sudo apt-get update
 # Test the Install
 sudo docker run hello-world
 
+# To get rid of the sudo you need to add your userID to the docker group.
+sudo groupadd docker # It might already exist.
+sudo usermod -aG docker anthony
+# Then restart the group
+newgrp docker
 
 # Access the prompt in docker
 sudo docker exec -it ubuntu bash

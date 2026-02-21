@@ -16,6 +16,11 @@ git submodule update --init --recursive
 ```
 Remove
 ```bash
+git rm path/to/submodule
+git commit
+```
+
+```bash
 git rm --cached path/to/submodule
 rm -rf path/to/submodule
 rm -rf .git/modules/path/to/submodule
