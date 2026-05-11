@@ -7,6 +7,7 @@
 - [Linux Desktop OS Setup](/linuxSetup.md)
 - [Linux Server OS Setup](/linuxServerSetup.md)
 - [Linux Cheat Sheet](/linuxCheatSheet.md)
+- [Linux Basics](/linuxBasics.md)
 ## Tools 
 - [Visual Studio Code Setup](/visualStudioCode.md)
 - [git Setup](/gitSetup.md)
@@ -23,6 +24,8 @@
 -[Docker Stuff](/docker.md)
 ## MongoDb
 -[Accessing Data on Disk](/mongodb.md)
+## Prompt Engineering
+-[Prompt Engineering in VSCode with Github Copilot](/promptEngineering.md)
 <details><summary><h2>Summary</h></summary>
 This is a test
 </details>
