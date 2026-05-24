@@ -59,6 +59,45 @@ However, However, running a terminal in VSCode does not leverage the credentials
 
 So if you perform any operation with VSCode, that registers my laptop against github. And now I can use command lines again.
 
+### More More stupid Github/WSL/Windows notes
+Thank you past Anthony above! And here is another note to future Anthony.
+
+I had a case where I could push from a folder on Windows (i.e. notes repo). But I could not push from a folder on WSL. It turns out I had to shut down WSL and restart it.
+
+Here was the error:
+```bash
+Missing or invalid credentials.
+Error: connect ENOENT /run/user/1000/vscode-git-2f43e73c1e.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-2f43e73c1e.sock'
+}
+Missing or invalid credentials.
+Error: connect ENOENT /run/user/1000/vscode-git-2f43e73c1e.sock
+    at PipeConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'connect',
+  address: '/run/user/1000/vscode-git-2f43e73c1e.sock'
+}
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/anconet/infraInstall.git/'
+```
+
+```bash
+# Shutdown WSL
+WSL --shutdown
+# Restart WSL
+WSL
+```
+Then I could push.
+
+WSL is probably leveraging the Windows credentials manager. But it's socket got cooked.
+
+As noted above, it would probably be good to just switch over to using SSH keys.For devcontainers, the devcontainer leverages the local SSH agent and key pair.
+
 ## Just running SSH against Github
 Here is a greate write up on (Setting Up SSH)[https://gist.github.com/xirixiz/b6b0c6f4917ce17a90e00f9b60566278]
 * Generate Key pair
