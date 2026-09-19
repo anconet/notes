@@ -1,8 +1,55 @@
-#
+# Trading
+[Return to Home](readMe.md)
 
-## Market
-- Futures, Forex, Crypto, SMB, Large Cap
-- SMB is our target
+## Some Types of Trading
+| Strategy | What to Scan For |
+| --- | --- |
+| Momentum | High relative volume, price breakout, strong trend |
+| Swing Trading | Pullbacks to moving averages, bullish reversals |
+| Day Trading | Gap-ups, unusual volume, volatility |
+| Value Investing | Low P/E, strong earnings growth, low debt |
+| Dividend Investing | High yield, dividend growth history |
+
+### Momentum Scanner
+Possible
+- Price > 50-day MA
+- 20-day volume > average volume
+- Relative Strength (RS) > 80
+- New 52-week highs
+
+## Markets
+Possible
+- Futures,
+- Foreign Exchange (Forex),
+- Crypto, 
+- SMB, 
+- Large Cap
+Our Targer
+- SMB
+## Data Sources
+Popular options:
+- Yahoo Finance (free)
+- Alpha Vantage
+- Finnhub
+- Polygon.io
+- IEX Cloud
+- Twelve Data
+For more serious scanners:
+- Polygon
+- Nasdaq Data Link
+- Alpaca Market Data
+
+## Comparison
+
+| Provider                         | Cost to Start        | Historical Data | Minute Data          | Fundamentals | Real-Time                 | Best For                            |
+| -------------------------------- | -------------------- | --------------- | -------------------- | ------------ | ------------------------- | ----------------------------------- |
+| Yahoo Finance (`yahoo-finance2`) | Free                 | Excellent       | Limited              | Good         | Mostly delayed/unofficial | Hobby projects, swing trading       |
+| Finnhub                          | Free tier available  | Good            | Good                 | Excellent    | Better than Yahoo         | Scanner + fundamentals              |
+| Alpha Vantage                    | Free tier available  | Good            | Limited on free tier | Good         | Limited                   | Learning and prototypes             |
+| Polygon                          | Paid for serious use | Excellent       | Excellent            | Basic        | Excellent                 | Day trading and production scanners |
+| Twelve Data                      | Free tier available  | Good            | Good                 | Limited      | Good                      | Charting apps                       |
+| Financial Modeling Prep          | Free tier available  | Good            | Moderate             | Excellent    | Limited                   | Value investing scanners            |
+
 ## Time of day
 -7:00 to 11:00
 ## Account
@@ -31,12 +78,13 @@ $500
         - Which is what we are looking for.
 
 ### Rules
-1) Price between 2 and 20
-2) Relative Volume 5x
-3) Price change since closing >10%
-4) Float less then 20M shares
+Looking for Demand and Contrained Supply
+1) Demand Indicator: Price between 2 and 20
+2) Demand Indicator: Relative Volume 5x
+3) Demand Indicator: Price change since closing >10%
+5) Demand Indicator: News catalyst
+4) Supply Contrain IndicatorFloat less then 20M shares
     - Lower is better
-5) News catalyst
 
 ## Managing Risk
 - Small account
@@ -64,3 +112,29 @@ $500
 - After hitting daily goal giving back half of daily goal.
 - 20% off high
 - If I feel angry
+
+## Trading Process
+```mermaid
+flowchart LR
+Scanner(Scanner)-->ScannerList(Display list of top stocks)-->UserClickStock
+
+DisplayStock-->WindowLevel2(Window Level2)
+DisplayStock-->Window1min(Window 1min)
+Window1min-->Markers(Lines: Profit/Entry/Loss)-->Indicator(Indicator: Valid 2:1)
+WindowIndicator-->IndicatorLevel2(Indicator: No Big sellers)
+WindowIndicator-->MACD(MACD is positive)
+WindowIndicator-->Volumn(Volume is good)
+WindowButtons-->Buttons(Enter/Exit)-->Logging
+```
+
+## Todo
+- Better understand how we use Level 2 data
+- Decide on realtime data provider
+    - 1 second data
+    - 1 min data
+    - Level 2
+    - Volume/Float
+- Watch a stock unfold in real time on the 1min
+    - Could do this for free with finnhub
+- Decide on trading provider
+    - Who is warrior trading using

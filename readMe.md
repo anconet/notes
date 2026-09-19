@@ -26,6 +26,10 @@
 -[Accessing Data on Disk](/mongodb.md)
 ## Prompt Engineering
 -[Prompt Engineering in VSCode with Github Copilot](/promptEngineering.md)
+## Trading
+-[Trading](/trading.md)
+-[Trading Realtime Provider](/trading-realtimeProvider.md)
+-[Trading Brokers](/trading-brokers.md)
 <details><summary><h2>Summary</h></summary>
 This is a test
 </details>
